@@ -10,4 +10,14 @@ export default class extends Controller {
   disconnect() {
     this.modal.hide()
   }
+
+  hideBeforeRender(event) {
+    event.preventDefault()
+
+    this.element.addEventListener('hidden.bs.modal', () => {
+      event.detail.resume()
+    })
+
+    this.modal.hide()
+  }
 }
