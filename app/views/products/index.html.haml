@@ -1,0 +1,19 @@
+.products-header
+  %h1 Products
+  %div= link_to "New product", new_product_path, class: "btn btn-primary",
+    data: { turbo_frame: "remote_modal" }
+
+%table#products.table
+  %thead
+    %tr
+      %th Name
+      %th Description
+      %th
+  %tbody
+    - @products.each do |product|
+      %tr{id: dom_id(product)}
+        %td= product.name
+        %td= product.description
+        %td.table-links
+          = link_to "Edit", edit_product_path(product), class: "me-2 btn btn-sm btn-outline-primary", data: { turbo_frame: "remote_modal" }
+          = button_to "Delete", product, method: :delete, class: "btn btn-sm btn-outline-danger", form: { data: { turbo_confirm: "Are you sure?" } }
