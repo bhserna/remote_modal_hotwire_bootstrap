@@ -7,7 +7,7 @@ RSpec.describe "User deletes product" do
     visit products_path
 
     within "#product_#{product.id}" do
-      click_on "Delete"
+      accept_confirm { click_on "Delete" }
     end
 
     expect(page).not_to have_css "#product_#{product.id}"
