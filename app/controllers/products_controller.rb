@@ -13,7 +13,7 @@ class ProductsController < ApplicationController
     if @product.save
       redirect_to products_path
     else
-      render :form_errors, status: :unprocessable_entity
+      render :form_update, status: :unprocessable_entity
     end
   end
 
@@ -27,7 +27,7 @@ class ProductsController < ApplicationController
     if @product.update(product_params)
       redirect_to products_path
     else
-      render :form_errors, status: :unprocessable_entity
+      render :form_update, status: :unprocessable_entity
     end
   end
 

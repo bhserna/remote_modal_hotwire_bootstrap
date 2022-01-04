@@ -1,8 +1,0 @@
-.modal.fade(tabindex="-1" data-controller="remote-modal" data-action="turbo:before-render@document->remote-modal#hideBeforeRender")
-  .modal-dialog
-    .modal-content
-      .modal-header
-        %h5.modal_title= title
-        %button(type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close")
-      .modal-body
-        = yield
