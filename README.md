@@ -1,24 +1,10 @@
-# README
+# Remote modals with hotwire and bootstrap
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an example ruby on rails app that shows how you can build "remote modals" (where the content is requested to the server), submit forms and handle erors, using Hotwire and bootstrap.
 
-Things you may want to cover:
+Ruby version: 3.0.0
+Rails version: 7.0.0
 
-* Ruby version
+Here is a video showing the example:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[Remote modals with Hotwire and Bootstrap](https://www.loom.com/share/bcc3514ebafc4665874098bf8386cd1f)
