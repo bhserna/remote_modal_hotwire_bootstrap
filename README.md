@@ -4,8 +4,8 @@ This is an example ruby on rails app that shows how you can build "remote modals
 
 ## Versions
 
-* Ruby: 3.0.0
-* Rails: 7.0.0
+* Ruby: 3.1.2
+* Rails: 7.0.8
 * Turbo rails: 1.0.0
 * Stimulus rails: 1.0.2
 * Bootstrap: 5.1.3
